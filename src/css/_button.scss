@@ -1,0 +1,36 @@
+.button {
+    width: 195px;
+    height: 50px;
+    border: $borderButtom;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    color: $buttomTextColor;
+    font-family: $defaultFonts;
+    font-size: $textFontSize;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: none;
+    margin: 0 auto;
+    &__recent-work {
+        color: $white;
+    }
+
+    &_submit {
+        width: 293px;
+        height: 70px;
+        background-color: $blueBell;
+        font-family: $secondaryFonts;
+        font-size: $textFontSize;
+        line-height: 26px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        color: $white;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 5px 2px 0 $blueBellShadow;
+    }
+}

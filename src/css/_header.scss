@@ -1,0 +1,108 @@
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 36px 0;
+    align-items: center;
+    z-index: 100;
+
+    &.sticet {
+        background-color: $blueBell;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    &__img {
+        display: block;
+    }
+}
+
+.menu {
+    &__wrapper {
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: $breack-points-lg) {
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: $blueBell;
+            z-index: 100;
+            text-align: center;
+        }
+    }
+    &__item {
+    }
+
+    &__item {
+        padding-left: 30px;
+    }
+
+    &__link {
+        counter-reset: $menuColor;
+        font-size: $menuFontSize;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $menuColor;
+        font-family: $secondaryFonts;
+        font-weight: 600;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: $topScrolColor;
+            position: absolute;
+            display: block;
+            transform: scale(0);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        &:hover::after {
+            transform: scale(1);
+        }
+    }
+}
+.menu-burger-btn {
+    display: none;
+    width: 30px;
+
+    &::before,
+    &::after,
+    span {
+        background: $white;
+        content: "";
+        display: block;
+        height: 3px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+
+    @media screen and (max-width: $breack-points-lg) {
+        display: block;
+    }
+}
+.menu-burger-btn.active::before {
+    transform: translateY(10px) rotate(135deg);
+}
+
+.menu-burger-btn.active::after {
+    transform: translateY(-10px) rotate(-135deg);
+}
+
+.menu-burger-btn.active span {
+    transform: scale(0);
+}
+.menu__list.active {
+    display: block;
+}

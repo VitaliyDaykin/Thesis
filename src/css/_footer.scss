@@ -1,0 +1,27 @@
+.footer {
+    background-color: $blueBell;
+    padding: 75px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link:not(:first-child) {
+        padding-left: 25px;
+    }
+
+    &__text {
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: $white;
+    }
+}

@@ -1,0 +1,61 @@
+$defaultFont: "PT Sans";
+$secondaryFont: "Proxima Nova";
+
+$defaultPath: "../fonts/pt-sans-v12-latin-regular";
+$defaultPathBold: "../fonts/pt-sans-v12-latin-700";
+$defaultPathItalik: "../fonts/pt-sans-v12-latin-italic";
+$secondaryPathBold: "../fonts/ProximaNova-Bold";
+$secondaryPathSemibold: "../fonts/ProximaNova-Semibold";
+
+$follBak: Arial, Helvetica, sans-serif;
+$defaultFonts: $defaultFont, $follBak;
+$secondaryFonts: $secondaryFont, $follBak;
+
+// цвет
+$white: #fff;
+$scorpion: #665f60;
+$bianca: #fefefb;
+$gallery: #ebebeb;
+$blueBell: #9f9acf;
+$suvaGray: #7d7a7c;
+$alto: #dbdbdb;
+$blueBellShadow: rgb(144, 139, 192);
+
+$defaultFontSize: 18px;
+$defaultFontWeight: 300;
+$defaultLineHeight: 1.625;
+$defaultFontColor: $scorpion;
+$defaultBackgroundColor: $white;
+$secondaryBackgroundColor: $gallery;
+
+// menu
+$menuFontSize: 24px;
+$menuColor: $white;
+
+//title
+$titleFontSize: 36px;
+$titleColor: $bianca;
+$titleFontSizeH1: 72px;
+$titleLineHeight: 60px;
+$subtitleColor: $bianca;
+$subtitleFontSize: 30px;
+$titleFontSizeH3: 24px;
+$titleColorH3: $scorpion;
+
+//buttom
+$borderButtom: 1px solid $suvaGray;
+$buttomTextColor: $suvaGray;
+
+//text
+$textFontSize: 20px;
+
+$breack-points-lg: 992px;
+$breack-points-md: 768px;
+$breack-points-sm: 576px;
+
+//slick
+$slickColor: $gallery;
+$slickBorder: 1px solid $gallery;
+
+$topScrolColor: $gallery;
+$topScrolBorder: 1px solid $gallery;
